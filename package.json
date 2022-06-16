@@ -10,7 +10,8 @@
     "preinstall": "npx only-allow pnpm",
     "clear": "rimraf node_modules",
     "lint-staged": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "git add . && git-cz"
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
@@ -40,6 +41,7 @@
     "@vue/eslint-config-standard": "^6.1.0",
     "axios": "^0.27.2",
     "chalk": "4.0.0",
+    "commitizen": "^4.2.4",
     "cz-customizable": "^6.3.0",
     "element-ui": "^2.15.9",
     "eslint": "^7.32.0",
