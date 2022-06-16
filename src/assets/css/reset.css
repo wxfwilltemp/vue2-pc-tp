@@ -127,14 +127,14 @@ input:focus::-webkit-input-placeholder {
 }
 
 /* Tooltip组件颜色修改 */
-.custom-tip.el-tooltip__popper[x-placement^=right] .popper__arrow{
-  border-right-color: #7A7B7E;
+.custom-tip.el-tooltip__popper[x-placement^='right'] .popper__arrow {
+  border-right-color: #7a7b7e;
 }
-.custom-tip.el-tooltip__popper[x-placement^=right] .popper__arrow:after {
-  border-right-color: #7A7B7E;
+.custom-tip.el-tooltip__popper[x-placement^='right'] .popper__arrow:after {
+  border-right-color: #7a7b7e;
 }
-.custom-tip{
-  background: rgba(0, 0, 0, 0.5)!important;
+.custom-tip {
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 /* 单选组件修改 */
@@ -142,9 +142,9 @@ input:focus::-webkit-input-placeholder {
   border-radius: 8px;
 }
 .el-checkbox {
-  color: #9EA9C8;
+  color: #9ea9c8;
 }
-.el-checkbox__input.is-checked+.el-checkbox__label {
+.el-checkbox__input.is-checked + .el-checkbox__label {
   color: #62697d;
 }
 
@@ -163,10 +163,10 @@ input:focus::-webkit-input-placeholder {
   text-align: right;
 }
 
-
 /* 上传修改 */
-.el-upload--picture-card:hover, .el-upload:focus {
-  border-color:  #c0ccda;
+.el-upload--picture-card:hover,
+.el-upload:focus {
+  border-color: #c0ccda;
 }
 .el-upload--picture-card {
   width: 80px;
@@ -182,10 +182,9 @@ input:focus::-webkit-input-placeholder {
 .el-upload-list--picture-card .el-upload-list__item:nth-child(4n) {
   margin: 0;
 }
-.el-upload-list--picture-card .el-upload-list__item-actions span+span {
+.el-upload-list--picture-card .el-upload-list__item-actions span + span {
   margin-left: 10px;
 }
-
 
 /* 搜索框修改 */
 .search-wrap .el-input__suffix {
