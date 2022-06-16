@@ -1,0 +1,211 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+.all-contaner::-webkit-scrollbar {
+  /*整个滚动条样式 高宽分别对应横竖滚动条的尺寸*/
+  width: 6px;
+  height: 6px;
+  background: #f8fbfe;
+}
+.all-contaner::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(144, 147, 153, 0.2);
+  background-color: rgba(144, 147, 153, 0.3);
+  transition: background-color 0.3s;
+}
+.all-contaner::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+  border-radius: 0;
+  background: transparent;
+}
+.cursor {
+  cursor: pointer;
+}
+span {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+i {
+  font-style: normal;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+legend {
+  margin: 0;
+  padding: 0;
+}
+iframe {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  max-width: 100%;
+  border: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td {
+  padding: 0;
+  text-align: left;
+}
+th {
+  padding: 0;
+  text-align: left;
+}
+.dian {
+  font-size: 15px;
+  font-weight: bold;
+}
+/* 修改chrome记住密码后自动填充表单的黄色背景 */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: rgb(250, 255, 189); /* #FAFFBD; */
+  background-image: none;
+  color: rgb(0, 0, 0);
+}
+/* 改变输入框内提示文字颜色 */
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+}
+input:focus::-webkit-input-placeholder {
+  color: #999;
+}
+.el-dropdown-menu {
+  width: 90px;
+  text-align: center;
+}
+
+/* Tooltip组件颜色修改 */
+.custom-tip.el-tooltip__popper[x-placement^=right] .popper__arrow{
+  border-right-color: #7A7B7E;
+}
+.custom-tip.el-tooltip__popper[x-placement^=right] .popper__arrow:after {
+  border-right-color: #7A7B7E;
+}
+.custom-tip{
+  background: rgba(0, 0, 0, 0.5)!important;
+}
+
+/* 单选组件修改 */
+.el-checkbox__inner {
+  border-radius: 8px;
+}
+.el-checkbox {
+  color: #9EA9C8;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: #62697d;
+}
+
+/* 弹窗页面修改 */
+.el-message-box--center .el-message-box__header {
+  padding-top: 20px;
+}
+.el-message-box--center .el-message-box__title {
+  justify-content: start;
+}
+.el-message-box--center .el-message-box__message {
+  margin-left: 18px;
+  text-align: left;
+}
+.el-message-box--center .el-message-box__btns {
+  text-align: right;
+}
+
+
+/* 上传修改 */
+.el-upload--picture-card:hover, .el-upload:focus {
+  border-color:  #c0ccda;
+}
+.el-upload--picture-card {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  box-sizing: border-box;
+}
+.el-upload-list--picture-card .el-upload-list__item {
+  width: 80px;
+  height: 80px;
+  margin: 0 20px 0 0;
+}
+.el-upload-list--picture-card .el-upload-list__item:nth-child(4n) {
+  margin: 0;
+}
+.el-upload-list--picture-card .el-upload-list__item-actions span+span {
+  margin-left: 10px;
+}
+
+
+/* 搜索框修改 */
+.search-wrap .el-input__suffix {
+  height: 48px;
+  line-height: 48px;
+}
+
+/* pdf預覽css修改 */
+.pdf-container .el-dialog {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 98%;
+  min-height: 600px;
+  overflow: auto;
+}
+.pdf-container .el-dialog .el-dialog__body {
+  flex: 1;
+  overflow: auto;
+}
